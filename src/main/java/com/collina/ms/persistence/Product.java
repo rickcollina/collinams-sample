@@ -4,8 +4,9 @@ package com.collina.ms.persistence;
 import com.amazonaws.services.dynamodbv2.datamodeling.*;
 
 @DynamoDBTable(tableName = "Product")
-public class Product {
+public class Product implements GoodsI {
 
+    //Later adding Lombok for better manipulate entities
     private String id;
     private String name;
     private double price;
